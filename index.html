@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leo CyberClub</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Leo CyberClub</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#prices">Цены</a></li>
+                <li><a href="#specs">Комплектующие</a></li>
+                <li><a href="#packs">Пакеты</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+            <div class="burger-menu" onclick="toggleMenu()">☰</div>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <h1>Добро пожаловать в <span class="neon-text">Leo CyberClub</span></h1>
+        <p>Лучший компьютерный клуб с топовыми ПК и PlayStation</p>
+    </section>
+
+    <!-- Раздел ЦЕНЫ -->
+    <section id="prices">
+        <h2>Цены</h2>
+        <div class="price-container">
+            <!-- Общий зал -->
+            <div class="price-box">
+                <h3>Общий зал</h3>
+                <ul>
+                    <li>1 час: 400 тг</li>
+                    <li>3 часа: 800 тг</li>
+                    <li>5 часов: 1200 тг</li>
+                    <li>День (9:00 – 17:00, Пн–Пт): 1500 тг</li>
+                    <li>Ночь (23:00 – 8:00): 1500 тг</li>
+                </ul>
+            </div>
+
+            <!-- VIP-зал -->
+            <div class="price-box">
+                <h3>VIP-зал</h3>
+                <ul>
+                    <li>1 час: 800 тг</li>
+                    <li>3 часа: 1600 тг</li>
+                    <li>5 часов: 2400 тг</li>
+                    <li>День (9:00 – 17:00, Пн–Пт): 2000 тг</li>
+                    <li>Ночь (23:00 – 8:00): 2500 тг</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Если нужно оставить PlayStation, можно добавить здесь -->
+        <div class="price-list">
+            <h3>PlayStation</h3>
+            <p>800 тг/час</p>
+        </div>
+    </section>
+
+    <!-- Раздел КОМПЛЕКТУЮЩИЕ -->
+    <section id="specs">
+        <h2>Комплектующие</h2>
+        <div class="specs-container">
+            <div class="spec-box">
+                <h3>Обычный зал</h3>
+                <ul>
+                    <li>Процессор: Intel Core i5 10400F</li>
+                    <li>Видеокарта: GTX 1660 Super</li>
+                    <li>ОЗУ: 16GB DDR4</li>
+                    <li>Монитор: 144Hz, 1ms</li>
+                </ul>
+            </div>
+            <div class="spec-box">
+                <h3>VIP-зал</h3>
+                <ul>
+                    <li>Процессор: Intel Core i5 12400F</li>
+                    <li>Видеокарта: RTX 3070 </li>
+                    <li>ОЗУ: 32GB DDR4</li>
+                    <li>Монитор: 240Hz, 1ms</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Раздел ПАКЕТЫ -->
+    <section id="packs">
+        <h2>Акционные пакеты</h2>
+        <div class="packs-list">
+            <div class="pack-item">2+1: При покупке 2 часов — 1 час в подарок</div>
+            <div class="pack-item">3+2: При покупке 3 часов — 2 часа в подарок</div>
+        </div>
+        <p>Действует для PlayStation, VIP-зала и обычного зала</p>
+    </section>
+
+    <!-- Раздел КОНТАКТЫ -->
+    <section id="contacts">
+        <h2>Контакты</h2>
+        <p>Адрес: г. Шымкент, мкр Восток,49/</p>
+        <p>Телефон: +7 777 123 4567</p>
+    </section>
+
+    <footer>
+        <p>© 2025 Игротека. Все права защищены.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #0a0a0a;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: rgba(0, 0, 0, 0.8);
+    border-bottom: 2px solid #0ff;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0ff;
+    text-shadow: 0 0 10px #0ff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #0ff;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff00ff;
+    text-shadow: 0 0 10px #ff00ff;
+}
+
+.burger-menu {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #0ff;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background: black;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+}
+
+#hero {
+    padding: 100px 20px;
+    background: url('https://source.unsplash.com/1600x900/?cyberpunk,neon') no-repeat center/cover;
+    color: #fff;
+    text-shadow: 0 0 10px #0ff;
+}
+
+.neon-text {
+    color: #0ff;
+    text-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+}
+
+.specs-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.spec-box {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    border-radius: 5px;
+    border: 2px solid #0ff;
+    box-shadow: 0 0 10px #0ff;
+    width: 45%;
+}
+
+.packs-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.pack-item {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    border-radius: 5px;
+    border: 2px solid #ff00ff;
+    box-shadow: 0 0 10px #ff00ff;
+}
+
+footer {
+    padding: 10px;
+    background: #111;
+    border-top: 2px solid #0ff;
+}
